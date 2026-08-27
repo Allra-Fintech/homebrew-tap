@@ -1,8 +1,8 @@
 class Mdv < Formula
   desc "CLI Markdown viewer: browser rendering with live reload, GFM, Mermaid, and PDF/HTML export"
   homepage "https://github.com/Allra-Fintech/mdv"
-  url "https://github.com/Allra-Fintech/mdv/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "9283d6f9757dd47d462b700d4721aa60a4e0736f46862f9a6f20a749a3bce704"
+  url "https://github.com/Allra-Fintech/mdv/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "4fc1f118c353a706f3b7613e1ca06643ee38136b7258ddd6feba5759e19547b5"
   license "MIT"
 
   depends_on "go" => :build
