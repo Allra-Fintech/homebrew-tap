@@ -1,0 +1,22 @@
+name: Test Texio formula
+on:
+  pull_request:
+    paths: ['Formula/texio.rb', '.github/workflows/texio.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-14, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install and test proposed formula
+        run: |
+          brew tap Allra-Fintech/tap
+          cp Formula/texio.rb "$(brew --repository Allra-Fintech/tap)/Formula/texio.rb"
+          brew install Allra-Fintech/tap/texio
+          brew test Allra-Fintech/tap/texio
