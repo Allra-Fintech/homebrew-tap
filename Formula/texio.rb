@@ -1,17 +1,17 @@
 class Texio < Formula
   desc "Reliable structural Markdown operations for shell scripts and AI agents"
   homepage "https://github.com/Allra-Fintech/texio"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Allra-Fintech/texio/releases/download/v0.1.2/texio-aarch64-apple-darwin.tar.gz"
-      sha256 "0c7ad5722f5d4d14658a9bc44f17c851ddcf7f24f06f172d6b7fcad8317979b2"
+      url "https://github.com/Allra-Fintech/texio/releases/download/v0.1.3/texio-aarch64-apple-darwin.tar.gz"
+      sha256 "5c8f330eb883698cc1651e4995020f796b6f8192bbb775d24416a05713025595"
     end
     on_intel do
-      url "https://github.com/Allra-Fintech/texio/releases/download/v0.1.2/texio-x86_64-apple-darwin.tar.gz"
-      sha256 "20433557c85076c9d43de5abaab59fb7f20c714256493e7e5cc9c56fb79772bc"
+      url "https://github.com/Allra-Fintech/texio/releases/download/v0.1.3/texio-x86_64-apple-darwin.tar.gz"
+      sha256 "e89e001a83d9b6ea325e218351563ea57634ed576ddadb0d26effb0cd0b2a190"
     end
   end
 
